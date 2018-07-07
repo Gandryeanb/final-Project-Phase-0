@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body {
+    background: rgb(75, 75, 75);
+}
+.main {
+    position: relative;
+    clear: both;
+}
+.leftFix {
+    width: 25%;
+    /* border: solid 1px red; */
+    height: 630px;
+    float: left;
+    
+}
+#displayLeft {
+    height: 630px; 
+}
+.center {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    /* border: solid 1px yellow; */
+    height: 40px;
+}
+.rightFix {
+    width: 25%;
+    /* border: solid 1px white; */
+    height: 630px;
+    float: right;
+}
+#displayRigth {
+    height: 630px; 
+}
+.header {
+    width: 50%;
+    margin: 30px auto 0px auto;
+    /* border: solid 1px brown; */
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+}
+.content {
+    /* border: solid 1px orange;    */
+    margin: 30px auto 0px auto;
+}
+                                                                                        /* opening */
+.opening {
+    color: white;
+    width: 300px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    display: block;
+}
+.opening div {
+    margin-bottom: 20px;
+}
+.opening #chamName {
+    margin-top: 10px;
+}
+.opening button {
+    background-color    : rgb(122, 116, 103);
+    /* border: 0.1; */
+    color: azure;
+    padding: 8px;
+    transition: 0.2s;
+}
+.opening button:hover {
+    background-color: rgb(83, 75, 50) 
+}
+.opening button:active {
+    background-color: rgb(136, 111, 35) 
+}
+#notif1 {                       
+    margin-top : 20px;
+}
+.status {
+    /* border: solid 1px red; */
+    width: 510px;
+    margin: 0px auto;
+    height: 150px;
+    display: block;
+    /* border: solid 1px red; */
+    overflow: hidden;
+    color: white;
+    display: none;
+}
+.hero {
+    width: 100%;
+    height: 75px;
+    /* border: solid 1px red; */
+    text-align: left
+}
+.enemy {
+    width: 100%;
+    height: 75px;
+    /* border: solid 1px yellow; */
+    text-align: right;
+}
+                                                                                /* tahap 2 */
+.pick-pict {
+    width: 510px;
+    margin: 0px auto;
+    height: 150px;
+    display: none;
+    /* border: solid 1px red; */
+    overflow: hidden;
+}
+.pick-pict div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+#templar {
+    background-image: url(img/001.png);
+}
+#oculist {
+    background-image: url(img/002.png);
+}
+#bountyHunter {
+    background-image: url(img/003.png);
+}
+#lepper {
+    background-image: url(img/004.png);
+}
+#pleagueDoctor {
+    background-image: url(img/005.png);
+}
+.pick-pict div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+.templar {
+    background: none;
+}
+.oculist {
+    background: none;
+}
+.bountyhunter {
+    background: none;
+}
+.lepper {
+    background: none;
+}
+.pleagueDoctor {
+    background: none;
+}
+#notif2 {
+    color: white;
+    width:  100%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+
+.skillTemplar {
+    width: 400px;
+    margin: 10px auto;
+    /* border: solid 1px rgb(19, 19, 19); */
+    clear: both;
+    color: white;
+    display: none;
+}
+.skillTemplar div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+.skillTemplar div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+
+#skill0T {
+    background-image: url(img/01-001.png);
+}
+#skill1T {
+    background-image: url(img/01-002.png);
+}
+#skill2T {
+    background-image: url(img/01-003.png);
+}
+#skill3T {
+    background-image: url(img/01-004.png);
+}
+
+.skillOculist {
+    width: 400px;
+    margin: 10px auto;
+    /* border: solid 1px rgb(19, 19, 19); */
+    clear: both;
+    color: white;
+    display: none;
+}
+.skillOculist div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+.skillOculist div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+#skill0O {
+    background-image: url(img/02-001.png);
+}
+#skill1O {
+    background-image: url(img/02-002.png);
+}
+#skill2O {
+    background-image: url(img/02-003.png);
+}
+#skill3O {
+    background-image: url(img/02-004.png);
+}
+
+.skillBountyHunter {
+    width: 400px;
+    margin: 10px auto;
+    /* border: solid 1px rgb(19, 19, 19); */
+    clear: both;
+    color: white;
+    display: none;
+}
+.skillBountyHunter div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+.skillBountyHunter div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+#skill0Bt {
+    background-image: url(img/03-001.png);
+}
+#skill1Bt {
+    background-image: url(img/03-002.png);
+}
+#skill2Bt {
+    background-image: url(img/03-003.png);
+}
+#skill3Bt {
+    background-image: url(img/03-004.png);
+}
+
+.skillLepper {
+    width: 400px;
+    margin: 10px auto;
+    /* border: solid 1px rgb(19, 19, 19); */
+    clear: both;
+    color: white;
+    display: none;
+}
+.skillLepper div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+.skillLepper div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+#skill0L {
+    background-image: url(img/04-001.png);
+}
+#skill1L {
+    background-image: url(img/04-002.png);
+}
+#skill2L {
+    background-image: url(img/04-003.png);
+}
+#skill3L {
+    background-image: url(img/04-004.png);
+}
+
+.skillPleagueDoctor {
+    width: 400px;
+    margin: 10px auto;
+    /* border: solid 1px rgb(126, 22, 22); */
+    clear: both;
+    color: white;
+    display: none;
+}
+.skillPleagueDoctor div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+.skillPleagueDoctor div button {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;  
+    margin: 10px;
+}
+#skill0Pd {
+    background-image: url(img/05-001.png);
+}
+#skill1Pd {
+    background-image: url(img/05-002.png);
+}
+#skill2Pd {
+    background-image: url(img/05-003.png);
+}
+#skill3Pd {
+    background-image: url(img/05-004.png);
+}
+#notif3 {
+    width: 400px;
+    overflow: hidden;
+    /* border: solid 1px red; */
+    text-align: center;
+    display: block;
+    color: white;
+    margin: 0px auto;
+    padding-top: 17px;
+}
+.start {
+    text-align: center;
+    margin: 20px auto;
+    display: none;
+}
+.start button {
+    background-color    : rgb(122, 116, 103);
+    /* border: 0.1; */
+    color: azure;
+    padding: 8px;
+    transition: 0.2s;
+    width: 100px;
+    position: absolute;
+    left: 43%;
+    top: 1450%;
+    
+}
+.start button:hover {
+    background-color: rgb(83, 75, 50) 
+}
+.start button:active {
+    background-color: rgb(136, 111, 35) 
+}
+                                                                                                /* Battle */
+.attack button {
+    background-color    : rgb(122, 116, 103);
+    /* border: 0.1; */
+    color: azure;
+    padding: 8px;
+    transition: 0.2s;
+    width: 100px;
+    position: absolute;
+    left: 43%;
+    top: 1450%;
+}
+.attack {
+    text-align: center;
+    margin: 20px auto;
+    display: none;
+}
+.attack button:hover {
+    background-color: rgb(83, 75, 50) 
+}
+.attack button:active {
+    background-color: rgb(136, 111, 35) 
+}

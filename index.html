@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darkest Dungeon</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="leftFix">
+            <div>
+                <img id='displayLeft' src=''>
+            </div>
+        </div>
+        <div class="center">
+            <div class="header">
+                <h1>Darkest Dungeon</h1>
+            </div>
+            <div class="content">
+                <div class="opening">
+                    <div>
+                        <label>Insert your Champion name</label>
+                        <input type="text" id='chamName'>
+                    </div>
+                    <button type="button" onclick="insertName()">Create Champion</button>
+                    <div id=notif1>
+                        <p></p>
+                    </div>
+                </div>
+                <div class='pick-pict'>
+                    <div class="templar">
+                        <button id="templar" onclick="pickClass('templar'),skillInfo('templar'),sellectedChamp(0),displayChar(0)"></button>
+                    </div>
+                    <div class="oculist">
+                        <button id="oculist" onclick="pickClass('oculist'),skillInfo('oculist'),sellectedChamp(1),displayChar(1)"></button>
+                    </div>
+                    <div class="bountyHunter">
+                        <button id="bountyHunter" onclick="pickClass('bountyHunter'),skillInfo('bountyHunter'),sellectedChamp(2),displayChar(2)"></button>
+                    </div>
+                    <div class="lepper">
+                        <button id="lepper" onclick="pickClass('lepper'),skillInfo('lepper'),sellectedChamp(3),displayChar(3)"></button>
+                    </div>
+                    <div class="pleagueDoctor">
+                        <button id ='pleagueDoctor' onclick="pickClass('pleagueDoctor'),skillInfo('pleagueDoctor'),sellectedChamp(4),displayChar(4)"></button>
+                    </div>
+                    <div id=notif2>
+                        <h3>Pick Your Job Class</h3>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="hero">
+                        <h1 id = 'hpHero'>HP : 30</h1>
+                    </div>
+                    <div class="enemy">
+                        <h1 id = 'hpEnemy'>30 : HP</h1>
+                    </div>
+                </div>
+                <div class='skillTemplar'>
+                    <div>
+                        <button id='skill0T' onclick="skillDetail('templar',0),sellectedSkill(0)"></button>
+                    </div>
+                    <div>
+                        <button id='skill1T' onclick="skillDetail('templar',1),sellectedSkill(1)"></button>
+                    </div>
+                    <div>
+                        <button id='skill2T' onclick="skillDetail('templar',2),sellectedSkill(2)"></button>
+                    </div>
+                    <div>
+                        <button id='skill3T' onclick="skillDetail('templar',3),sellectedSkill(3)"></button>
+                    </div>
+                </div>
+                <div class='skillOculist'>
+                    <div>
+                        <button id='skill0O' onclick="skillDetail('oculist',0)"></button>
+                    </div>
+                    <div>
+                        <button id='skill1O' onclick="skillDetail('oculist',1)"></button>
+                    </div>
+                    <div>
+                        <button id='skill2O' onclick="skillDetail('oculist',2)"></button>
+                    </div>
+                    <div>
+                        <button id='skill3O' onclick="skillDetail('oculist',3)"></button>
+                    </div>
+                </div>
+                <div class='skillBountyHunter'>
+                    <div>
+                        <button id='skill0Bt' onclick="skillDetail('bountyHunter',0)"></button>
+                    </div>
+                    <div>
+                        <button id='skill1Bt' onclick="skillDetail('bountyHunter',1)"></button>
+                    </div>
+                    <div>
+                        <button id='skill2Bt' onclick="skillDetail('bountyHunter',2)"></button>
+                    </div>
+                    <div>
+                        <button id='skill3Bt' onclick="skillDetail('bountyHunter',3)"></button>
+                    </div>
+                </div>
+                <div class='skillLepper'>
+                    <div>
+                        <button id='skill0L' onclick="skillDetail('lepper',0)"></button>
+                    </div>
+                    <div>
+                        <button id='skill1L' onclick="skillDetail('lepper',1)"></button>
+                    </div>
+                    <div>
+                        <button id='skill2L' onclick="skillDetail('lepper',2)"></button>
+                    </div>
+                    <div>
+                        <button id='skill3L' onclick="skillDetail('lepper',3)"></button>
+                    </div>
+                </div>
+                <div class='skillPleagueDoctor'>
+                    <div>
+                        <button id='skill0Pd' onclick="skillDetail('pleagueDoctor',0)"></button>
+                    </div>
+                    <div>
+                        <button id='skill1Pd' onclick="skillDetail('pleagueDoctor',1)"></button>
+                    </div>
+                    <div>
+                        <button id='skill2Pd' onclick="skillDetail('pleagueDoctor',2)"></button>
+                    </div>
+                    <div>
+                        <button id='skill3Pd' onclick="skillDetail('pleagueDoctor',3)"></button>
+                    </div>
+                </div>
+                <div id=notif3>
+                    <h4></h4>
+                    <p><br></p>
+                </div>
+                <div class="start">
+                    <button type="button" onclick="toBattle()">Start Battle</button>
+                </div> 
+                <div class="attack">
+                    <button type="button" onclick="attack()">Attack</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="rightFix">
+            <div >
+                <img id='displayRigth' src="">   
+            </div>
+        </div>
+    </div>
+    <script src="skill-Info.js"></script>
+    <script src="battle.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
